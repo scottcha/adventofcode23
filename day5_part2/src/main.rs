@@ -8,7 +8,7 @@ use rayon::ThreadPoolBuilder;
 // pre optimization
 // lowest seed id: 2254686
 // highest seed id: 4102374000
-// Time elapsed is: 100.8056041s
+// 1 thread release Time elapsed is: 100.8056041s
 // 4 threads debug Time elapsed is: 380.5795926s
 // 12 threads debug Time elapsed is: 193.5838783s
 // 20 threads debug Time elapsed is: 170.1574675s
