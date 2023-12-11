@@ -89,11 +89,7 @@ fn main() -> io::Result<()>{
                 continue;
             }
             let res = count_pipes_from_pos(&distance_matrix, (row, col));
-            //debug
-            // if row == 6 && col == 2
-            // {
-            //     println!("row 6 col 2 res: {:?}", res);
-            // }
+        
             if res.1 == 'I'
             {
                 col_inside_count += 1;
