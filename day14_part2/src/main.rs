@@ -3,6 +3,8 @@ use std::io::{self, BufRead};
 use std::path::Path;
 use std::time::Instant;
 use std::collections::{HashSet, HashMap};
+//There is a bug in this and the code is really messy
+//Moving on for sake of other priorities
 
 fn main() -> io::Result<()>{
 
