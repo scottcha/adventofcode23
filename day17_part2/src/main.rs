@@ -4,7 +4,6 @@ use std::path::Path;
 use std::time::Instant;
 use std::collections::{HashMap, BinaryHeap};
 use std::cmp::Reverse;
-
 //help from https://github.com/jonathanpaulson/AdventOfCode/blob/master/2023/17.py
 fn main() -> io::Result<()>{
 
@@ -47,7 +46,7 @@ fn main() -> io::Result<()>{
 
             let isnt_reverse = ((nd + 2) % 4) != dir;
 
-            let is_valid = ns <= 3;
+            let is_valid = (ns <= 10 && (nd == dir || steps >= 4 || steps == -1));
 
             if nr >= 0 && nr < matrix.len() as i32 && nc >= 0 && nc < matrix[0].len() as i32 && is_valid && isnt_reverse
             {
