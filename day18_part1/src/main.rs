@@ -21,13 +21,13 @@ fn main() -> io::Result<()>{
         {
             "R" => 
             {
-                current = (current.0, sub_lines[1].to_string().parse::<i32>().unwrap() + current.1);
+                current = (current.0, sub_lines[1].to_string().parse::<i32>().unwrap() + current.1 );
                 vertices.push(current);
                 edge_colors.push(sub_lines[2][2..8].to_string());
             }
             "L" => 
             {
-                current = (current.0, current.1 - sub_lines[1].to_string().parse::<i32>().unwrap());
+                current = (current.0, current.1 - sub_lines[1].to_string().parse::<i32>().unwrap() );
                 vertices.push(current);
                 edge_colors.push(sub_lines[2][2..8].to_string());
             }
@@ -39,7 +39,7 @@ fn main() -> io::Result<()>{
             }
             "D" => 
             {
-                current = (current.0 + sub_lines[1].to_string().parse::<i32>().unwrap(), current.1);
+                current = (current.0 + sub_lines[1].to_string().parse::<i32>().unwrap() , current.1);
                 vertices.push(current);
                 edge_colors.push(sub_lines[2][2..8].to_string());
             }
